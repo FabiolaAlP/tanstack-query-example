@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "description": "An introduction to json-server, a tool that allows you to quickly create a mock REST API with zero coding."
+    },
+    {
+      "id": 2,
+      "title": "Learn React",
+      "author": "John Doe",
+      "description": "A comprehensive guide on how to get started with React, one of the most popular JavaScript libraries for building user interfaces."
+    },
+    {
+      "id": 3,
+      "title": "Understanding Node.js",
+      "author": "Jane Smith",
+      "description": "An in-depth article explaining the core concepts of Node.js, a JavaScript runtime used for building scalable network applications."
+    },
+    {
+      "title": "My new post",
+      "author": "John Doe",
+      "description": "this is a description test ",
+      "id": 4
+    },
+    {
+      "title": "Let's learn about TanStack Query",
+      "author": "Emily Jones",
+      "description": "When it comes to fetching data, there are a lot of tools that can aid us in performing this. Today we will learn the basics about TanStack Query, and what makes it special to handle server state data.",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Great post on React!",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "Node.js concepts explained well.",
+      "postId": 3
+    },
+    {
+      "id": 4,
+      "body": "Very useful for JSON APIs!",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode",
+    "email": "typicode@example.com"
+  }
+}
