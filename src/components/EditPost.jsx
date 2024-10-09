@@ -1,14 +1,25 @@
-import React from 'react'
 import { useForm } from "react-hook-form";
-import { useCreatePost } from '../api/mutations';
+import { useEditPost } from '../api/mutations';
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
+import { usePost } from "../api/queries";
+import { useParams } from "react-router-dom";
 
-const PostForm = () => {
-    const { register, handleSubmit, formState: { errors, touchedFields } } = useForm({ mode: "onTouched" })
-    const { mutateAsync: createPostMutation, isError, isPending, isSuccess, error } = useCreatePost();
+const EditPost = () => {
+    const { id } = useParams();
+    const { register, handleSubmit, setValue, formState: { errors, touchedFields } } = useForm({ mode: "onTouched" })
+    const { data: post } = usePost(id);
+    const { mutateAsync: editPostMutation, isPending, isSuccess, isError, error } = useEditPost();
+    useEffect(() => {
+        if (post) {
+            setValue("title", post.title)
+            setValue("author", post.author)
+            setValue("description", post.description)
+        }
+    }, [post, setValue])
     const onSubmit = async (data) => {
         try {
-            await createPostMutation(data);
+            await editPostMutation({ id, updatedPost: data });
         } catch (error) {
             console.error(error)
         }
@@ -41,15 +52,15 @@ const PostForm = () => {
                 <label htmlFor="description">
                     <textarea placeholder='Description' className='w-full rounded-lg indent-2' rows={4} type="text" {...register("description")} />
                 </label>
-                <button type='submit' className='p-4 text-white bg-blue-700 rounded-lg'>Add Post</button>
+                <button type='submit' className='p-4 text-white bg-blue-700 rounded-lg'>Edit Post</button>
             </form>
             <section className='w-full h-auto max-w-md mx-auto my-2'>
                 {isPending && <span className='block font-bold text-center text-blue-500'>Sending data...</span>}
                 {isError && <span className='block font-bold text-center text-red-400'>{error.message}</span>}
-                {isSuccess && <span className='block font-bold text-center text-green-500'>Post added successfully!</span>}
+                {isSuccess && <span className='block font-bold text-center text-green-500'>Post edited successfully!</span>}
             </section>
         </div>
     )
 }
 
-export default PostForm
+export default EditPost

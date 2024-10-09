@@ -27,3 +27,12 @@ export const createPost = async (newPost) => {
         console.error(error)
     }
 }
+
+export const editPost = async (id, updatedpost) => {
+    try {
+        const response = await axios.patch(`${BASE_URL}/posts/${id}`, updatedpost)
+        console.log("Successfully edited post!", response.data);
+    } catch (error) {
+        console.error(error)
+    }
+}

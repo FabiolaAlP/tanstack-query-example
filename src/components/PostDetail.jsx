@@ -19,6 +19,7 @@ const PostDetail = () => {
             <p className='text-pretty'>
                 {post.description}
             </p>
+            <Link className='block text-black hover:text-blue-500' to={`/editPost/${post.id}`}>Edit Post</Link>
         </section>
     )
 }
