@@ -14,7 +14,7 @@ const AppRoutes = [{
     { path: "/addPost", element: <PostForm /> },
     ],
 },
-{ path: '*', element: <Navigate to="/" /> },
+{ path: '*', element: <Navigate to="/posts" /> },
 ]
 
 
