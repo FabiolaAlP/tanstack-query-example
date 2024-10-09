@@ -29,6 +29,12 @@
       "author": "Emily Jones",
       "description": "When it comes to fetching data, there are a lot of tools that can aid us in performing this. Today we will learn the basics about TanStack Query, and what makes it special to handle server state data.",
       "id": 5
+    },
+    {
+      "title": "Expo Apps!",
+      "author": "Expo Dev",
+      "description": "Expo is a good option when you want to develop an app for multiple platforms.",
+      "id": 6
     }
   ],
   "comments": [

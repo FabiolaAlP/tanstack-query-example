@@ -10,7 +10,7 @@ const List = () => {
         return <span className='block text-center text-red-500'>{error.message}</span>
     }
     return (
-        <div className='w-full max-w-4xl p-4 mx-auto border-2 border-blue-700 rounded-lg sm:m-4 sm:p-6'>
+        <div className='w-full max-w-4xl p-4 mx-auto border-2 border-blue-700 rounded-lg shadow-lg sm:m-4 sm:p-6 bg-zinc-100'>
             <h2 className='text-2xl font-bold text-balance'>Post List</h2>
             {
                 <ul>
@@ -23,7 +23,7 @@ const List = () => {
                     ))}
                 </ul>
             }
-            <Link className='block text-right hover:text-green-600' to="/addPost">Create Post</Link>
+            <Link className='block text-left rounded-lg sm:text-right hover:text-green-600' to="/addPost">Create Post</Link>
         </div>
     )
 }
