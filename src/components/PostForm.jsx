@@ -16,7 +16,7 @@ const PostForm = () => {
     }
     return (
         <div className='w-4/5 max-w-4xl p-6 mx-auto mt-24 mb-6 border-2 border-blue-600 rounded-lg shadow-lg bg-zinc-100 sm:mt-14'>
-            <Link to="/posts" className='block text-black hover:text-blue-500'>Go Back</Link>
+            <Link to="/" className='block text-black hover:text-blue-500'>Go Back</Link>
             <form className='flex flex-col justify-center gap-6 p-2 sm:p-4' onSubmit={handleSubmit(onSubmit)}>
                 <label htmlFor="title">
                     <input placeholder='Title' className='w-full py-2 rounded-lg indent-2' type="text" {...register("title", { required: "Title is required" })} />

@@ -19,12 +19,6 @@
       "description": "An in-depth article explaining the core concepts of Node.js, a JavaScript runtime used for building scalable network applications."
     },
     {
-      "title": "My new post",
-      "author": "John Doe",
-      "description": "this is a description test ",
-      "id": 4
-    },
-    {
       "title": "Let's learn about TanStack Query",
       "author": "Emily Jones",
       "description": "When it comes to fetching data, there are a lot of tools that can aid us in performing this. Today we will learn the basics about TanStack Query, and what makes it special to handle server state data.",
@@ -35,12 +29,6 @@
       "author": "Expo Dev",
       "description": "Expo is a good option when you want to develop an app for multiple platforms.",
       "id": 6
-    },
-    {
-      "title": "Testing editing title post",
-      "author": "Dev Test",
-      "description": "description test",
-      "id": 7
     }
   ],
   "comments": [

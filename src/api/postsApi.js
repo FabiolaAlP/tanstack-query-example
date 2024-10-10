@@ -16,6 +16,7 @@ export const getPost = async (id) => {
         return response.data;
     } catch (error) {
         console.error(error)
+        throw error
     }
 }
 
@@ -25,6 +26,7 @@ export const createPost = async (newPost) => {
         console.log("Post added sucessfully", response.data);
     } catch (error) {
         console.error(error)
+        throw error;
     }
 }
 
@@ -34,5 +36,15 @@ export const editPost = async (id, updatedpost) => {
         console.log("Successfully edited post!", response.data);
     } catch (error) {
         console.error(error)
+        throw error;
+    }
+}
+
+export const deletePost = async (id) => {
+    try {
+        const response = await axios.delete(`${BASE_URL}/posts/${id}`);
+        console.log("Post deleted", response.data);
+    } catch (error) {
+        throw error;
     }
 }
