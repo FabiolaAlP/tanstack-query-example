@@ -15,7 +15,7 @@ export function useEditPost() {
     const queryClient = useQueryClient();
     return useMutation({
         mutationFn: ({ id, updatedPost }) => editPost(id, updatedPost),
-        onSuccess: () => {
+        onSuccess: (id) => {
             queryClient.invalidateQueries(["posts"]),
                 queryClient.invalidateQueries(["post", id])
         }

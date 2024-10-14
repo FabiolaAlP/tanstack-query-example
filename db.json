@@ -29,6 +29,12 @@
       "author": "Expo Dev",
       "description": "Expo is a good option when you want to develop an app for multiple platforms.",
       "id": 6
+    },
+    {
+      "title": "test #4",
+      "author": "Dev Test",
+      "description": "This is the new description, after the posted was created, and then edited.",
+      "id": 7
     }
   ],
   "comments": [
