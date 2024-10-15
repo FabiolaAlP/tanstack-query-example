@@ -109,8 +109,126 @@
       "postId": 5
     }
   ],
-  "profile": {
-    "name": "typicode",
-    "email": "typicode@example.com"
-  }
+  "profiles": [
+    {
+      "id": 1,
+      "name": "typicode",
+      "email": "typicode@example.com",
+      "bio": "Creator of json-server, helping developers with fast mock REST APIs."
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "bio": "JavaScript enthusiast, focused on front-end development with React."
+    },
+    {
+      "id": 3,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "bio": "Backend developer specializing in Node.js and scalable applications."
+    },
+    {
+      "id": 4,
+      "name": "Emily Jones",
+      "email": "emily@example.com",
+      "bio": "Full-stack developer, passionate about state management and data fetching."
+    },
+    {
+      "id": 5,
+      "name": "Expo Dev",
+      "email": "expo@example.com",
+      "bio": "Mobile app developer, experienced in building cross-platform apps using Expo."
+    },
+    {
+      "id": 6,
+      "name": "Dev Test",
+      "email": "devtest@example.com",
+      "bio": "QA engineer and developer, experimenting with testing and automated workflows."
+    },
+    {
+      "id": 7,
+      "name": "Sarah Connor",
+      "email": "sarah.connor@example.com",
+      "bio": "DevOps specialist, optimizing CI/CD pipelines for faster deployments."
+    },
+    {
+      "id": 8,
+      "name": "Michael Johnson",
+      "email": "michael.j@example.com",
+      "bio": "Frontend developer, mastering CSS and JavaScript animations."
+    },
+    {
+      "id": 9,
+      "name": "Laura Palmer",
+      "email": "laura.p@example.com",
+      "bio": "Data scientist with a passion for machine learning and AI."
+    },
+    {
+      "id": 10,
+      "name": "Alex Rivers",
+      "email": "alex.r@example.com",
+      "bio": "Backend engineer focusing on scalable microservices and cloud architecture."
+    },
+    {
+      "id": 11,
+      "name": "David Brown",
+      "email": "david.b@example.com",
+      "bio": "Cybersecurity expert, ensuring secure applications through pentesting."
+    },
+    {
+      "id": 12,
+      "name": "Nina Williams",
+      "email": "nina.w@example.com",
+      "bio": "UI/UX designer, crafting beautiful and intuitive user interfaces."
+    },
+    {
+      "id": 13,
+      "name": "Chris Evans",
+      "email": "chris.e@example.com",
+      "bio": "Software architect, designing scalable and maintainable system architectures."
+    },
+    {
+      "id": 14,
+      "name": "Sophia Miller",
+      "email": "sophia.m@example.com",
+      "bio": "Full-stack developer with a strong focus on performance optimization."
+    },
+    {
+      "id": 15,
+      "name": "Daniel Craig",
+      "email": "daniel.c@example.com",
+      "bio": "Cloud engineer, helping companies transition to cloud-based infrastructures."
+    },
+    {
+      "id": 16,
+      "name": "Isabella Turner",
+      "email": "isabella.t@example.com",
+      "bio": "Mobile developer, specializing in native iOS and Android apps."
+    },
+    {
+      "id": 17,
+      "name": "Ethan Carter",
+      "email": "ethan.c@example.com",
+      "bio": "Blockchain developer, exploring decentralized applications."
+    },
+    {
+      "id": 18,
+      "name": "Oliver King",
+      "email": "oliver.k@example.com",
+      "bio": "AI researcher, working on natural language processing and robotics."
+    },
+    {
+      "id": 19,
+      "name": "Emma Davis",
+      "email": "emma.d@example.com",
+      "bio": "Frontend developer, focused on React and Vue.js applications."
+    },
+    {
+      "id": 20,
+      "name": "Liam Harris",
+      "email": "liam.h@example.com",
+      "bio": "Game developer, passionate about building immersive virtual experiences."
+    }
+  ]
 }

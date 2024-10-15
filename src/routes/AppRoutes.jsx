@@ -7,6 +7,7 @@ import PostForm from "../components/PostForm"
 import EditPost from "../components/EditPost"
 import DeletePost from "../components/DeletePost"
 import Comments from "../components/Comments"
+import Profiles from "../components/Profiles"
 
 const AppRoutes = [{
     path: "/",
@@ -20,9 +21,10 @@ const AppRoutes = [{
         { path: "editPost/:id", element: <EditPost /> },
         { path: "deletePost/:id", element: <DeletePost /> },
         { path: "comments", element: <Comments /> },
+        { path: "profiles", element: <Profiles /> },
     ],
 },
-{ path: '*', element: <Navigate to="/posts" /> },
+{ path: '*', element: <Navigate to="/" /> },
 ]
 
 
