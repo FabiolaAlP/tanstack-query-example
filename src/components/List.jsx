@@ -24,6 +24,7 @@ const List = () => {
                 </ul>
             }
             <Link className='block text-left rounded-lg sm:text-right hover:text-green-600' to="/addPost">Create Post</Link>
+            <Link className='block text-left rounded-lg sm:text-right hover:text-blue-500' to="/comments">Comments</Link>
         </div>
     )
 }

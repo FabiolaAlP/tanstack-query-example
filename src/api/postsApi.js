@@ -30,9 +30,9 @@ export const createPost = async (newPost) => {
     }
 }
 
-export const editPost = async (id, updatedpost) => {
+export const editPost = async (id, updatedPost) => {
     try {
-        const response = await axios.patch(`${BASE_URL}/posts/${id}`, updatedpost)
+        const response = await axios.patch(`${BASE_URL}/posts/${id}`, updatedPost)
         console.log("Successfully edited post!", response.data);
     } catch (error) {
         console.error(error)
@@ -44,6 +44,17 @@ export const deletePost = async (id) => {
     try {
         const response = await axios.delete(`${BASE_URL}/posts/${id}`);
         console.log("Post deleted", response.data);
+    } catch (error) {
+        throw error;
+    }
+}
+
+export const fetchComments = async (_page, _limit = 5) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/comments/`, { params: { _page, _limit } });
+        const totalComments = response.headers['x-total-count'];
+        const totalPages = Math.ceil(totalComments / _limit);
+        return { data: response.data, total: totalPages };
     } catch (error) {
         throw error;
     }

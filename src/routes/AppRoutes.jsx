@@ -6,6 +6,7 @@ import { Navigate } from "react-router-dom"
 import PostForm from "../components/PostForm"
 import EditPost from "../components/EditPost"
 import DeletePost from "../components/DeletePost"
+import Comments from "../components/Comments"
 
 const AppRoutes = [{
     path: "/",
@@ -18,6 +19,7 @@ const AppRoutes = [{
         { path: "addPost", element: <PostForm /> },
         { path: "editPost/:id", element: <EditPost /> },
         { path: "deletePost/:id", element: <DeletePost /> },
+        { path: "comments", element: <Comments /> },
     ],
 },
 { path: '*', element: <Navigate to="/posts" /> },

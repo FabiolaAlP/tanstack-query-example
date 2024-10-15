@@ -57,6 +57,56 @@
       "id": 4,
       "body": "Very useful for JSON APIs!",
       "postId": 1
+    },
+    {
+      "id": 5,
+      "body": "Thanks for the tutorial on Express!",
+      "postId": 2
+    },
+    {
+      "id": 6,
+      "body": "This cleared up my confusion with MongoDB aggregation.",
+      "postId": 3
+    },
+    {
+      "id": 7,
+      "body": "Can you provide more examples for middleware?",
+      "postId": 2
+    },
+    {
+      "id": 8,
+      "body": "Great tips on improving API security.",
+      "postId": 4
+    },
+    {
+      "id": 9,
+      "body": "This guide on front-end performance optimization was really helpful!",
+      "postId": 5
+    },
+    {
+      "id": 10,
+      "body": "Loved the part about handling errors in async functions.",
+      "postId": 1
+    },
+    {
+      "id": 11,
+      "body": "CSS Grid tutorial was exactly what I needed.",
+      "postId": 6
+    },
+    {
+      "id": 12,
+      "body": "Thanks for breaking down React hooks so clearly!",
+      "postId": 2
+    },
+    {
+      "id": 13,
+      "body": "This is the best explanation of JavaScript closures I’ve seen.",
+      "postId": 7
+    },
+    {
+      "id": 14,
+      "body": "Webpack configuration finally makes sense after reading this.",
+      "postId": 5
     }
   ],
   "profile": {

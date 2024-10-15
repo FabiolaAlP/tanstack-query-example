@@ -41,7 +41,7 @@ const PostForm = () => {
                 <label htmlFor="description">
                     <textarea placeholder='Description' className='w-full rounded-lg indent-2' rows={4} type="text" {...register("description")} />
                 </label>
-                <button type='submit' className='p-4 text-white bg-blue-700 rounded-lg'>Add Post</button>
+                <button type='submit' disabled={createPostMutation.isPending} className='p-4 text-white bg-blue-700 rounded-lg'>Add Post</button>
             </form>
             <section className='w-full h-auto max-w-md mx-auto my-2'>
                 {isPending && <span className='block font-bold text-center text-blue-500'>Sending data...</span>}

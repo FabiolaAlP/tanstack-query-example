@@ -10,7 +10,7 @@ const DeletePost = () => {
     const { mutateAsync: deletePostMutation, isSuccess, isPending } = useDeletePost()
     useEffect(() => {
         if (isSuccess) {
-            navigate("/posts")
+            navigate("/")
         }
     }, [isSuccess, navigate])
     const handlePostDelete = async () => {
