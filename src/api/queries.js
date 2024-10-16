@@ -1,5 +1,5 @@
-import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { fetchComments, fetchPosts, getPost } from "./postsApi";
+import { keepPreviousData, useInfiniteQuery, useQuery } from "@tanstack/react-query";
+import { fetchComments, fetchPosts, fetchProfiles, getPost } from "./postsApi";
 
 export function usePosts() {
     return useQuery({
@@ -21,4 +21,18 @@ export function useComments(_page,) {
         queryFn: () => fetchComments(_page,),
         placeholderData: keepPreviousData
     })
+}
+
+//infinite scroll (queries)
+export function useProfiles() {
+    return useInfiniteQuery({
+        queryKey: ["profiles"],
+        queryFn: fetchProfiles,
+        getNextPageParam: (lastPage, allPages) => {
+            if (lastPage.length === 0 || lastPage.nextPage > lastPage.total) {
+                return undefined;
+            }
+            return allPages.length + 1;
+        }
+    });
 }
